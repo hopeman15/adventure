@@ -17,7 +17,7 @@ TESTING_ARGS ?= -enableCodeCoverage YES -derivedDataPath ../build/derived-data-i
 # TODO: Remove this and enable code signing on CI
 SIGNING_CONFIG ?= CODE_SIGNING_ALLOWED=NO
 
-all: clean format all-android all-ios all-shared report
+all: clean format lint all-android all-ios all-shared report
 .PHONY: all
 
 all-android: clean-gradle test-android assemble
