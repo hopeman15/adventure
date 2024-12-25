@@ -14,6 +14,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "adventure"
+rootProject.name = "Adventure"
 include(":android")
 include(":shared")
