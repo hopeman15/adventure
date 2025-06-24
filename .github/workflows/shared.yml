@@ -103,7 +103,7 @@ jobs:
       - name: Test
         run: make clean-gradle test-shared-android report-shared
       - name: Report
-        uses: codecov/codecov-action@v5.1.2
+        uses: codecov/codecov-action@v5.4.3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           flags: Shared
@@ -128,7 +128,7 @@ jobs:
       - name: Test
         run: make clean-gradle test-shared-ios report-shared
       - name: Report
-        uses: codecov/codecov-action@v5.1.2
+        uses: codecov/codecov-action@v5.4.3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           flags: Shared
