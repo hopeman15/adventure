@@ -51,7 +51,7 @@ jobs:
         run: make clean-ios test-ios report-ios
 
       - name: Report
-        uses: codecov/codecov-action@v5.4.3
+        uses: codecov/codecov-action@v5.5.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           flags: iOS
